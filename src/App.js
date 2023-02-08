@@ -5,7 +5,7 @@ import Particles from 'react-tsparticles'
 import { loadStarsPreset } from 'tsparticles-preset-stars'
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
 import Explore from './Pages/explore'
-import Repos from './Pages/Repositories/Repos'
+// import Repos from './Pages/Repositories/Repos'
 
 const App = () => {
   const options = {
@@ -29,7 +29,7 @@ const App = () => {
           {/* <Routing /> */}
           <Explore />
           {/* <Landing /> */}
-          <Repos />
+          {/*<Repos /> */}
         </ErrorBoundary>
       </div>
 
