@@ -1,6 +1,6 @@
 import React from 'react'
-import { FaRegStar } from 'react-icons/fa'
-import './Repositories.scss'
+// import { FaRegStar } from 'react-icons/fa'
+import './Explore.scss'
 
 export default function RepositoryCard({
   name,
@@ -19,9 +19,7 @@ export default function RepositoryCard({
       </div>
       <div className='jav'>
         <p>{language}</p>
-        <i>
-          <FaRegStar />
-        </i>
+        <i>{/* <FaRegStar /> */}</i>
         <p className='starCount'>{star_count}</p>
       </div>
     </div>

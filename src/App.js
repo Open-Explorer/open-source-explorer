@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.scss'
 import Particles from 'react-tsparticles'
-import { Landing } from './Pages'
 import { loadStarsPreset } from 'tsparticles-preset-stars'
 import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
+import { Routing } from './Components'
 
 const App = () => {
   const options = {
@@ -43,8 +43,7 @@ const App = () => {
     <div className='App'>
       <div className='components-containter'>
         <ErrorBoundary>
-          {/* <Routing /> */}
-          <Landing />
+          <Routing />
         </ErrorBoundary>
       </div>
 
