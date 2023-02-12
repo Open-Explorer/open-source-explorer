@@ -4,6 +4,7 @@ import { Navbar } from '../../Components'
 import RepositoryCard from './RepositoryCard'
 import { useEffect } from 'react'
 import axios from 'axios'
+import { Gi3DGlasses } from 'react-icons/gi'
 
 const Explore = () => {
   const [repositories, setRepositories] = useState([])
@@ -29,6 +30,14 @@ const Explore = () => {
       {isLoading && <p className='loading'>Loading...</p>}
       {!isLoading && (
         <>
+          <div className='explore'>
+            <h1 className='glass'>
+              Explore Repositories
+              <i>
+                <Gi3DGlasses />
+              </i>
+            </h1>
+          </div>
           <div className='repo-box'>
             {repositories.map((repo) => {
               return (

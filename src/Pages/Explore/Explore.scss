@@ -2,36 +2,35 @@ body {
   background: #c6cdd7;
 }
 
-.repositories {
-  display: flex;
-  justify-content: space-between;
-  max-height: 70px;
-  max-width: 900px;
-  margin-left: 450px;
-  margin-top: -300px;
-}
-
-p {
-  color: #f0f6fc;
-  font-size: 20px;
-}
-
 .repo-box {
-  max-width: 900px;
-  margin-left: 450px;
   display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+
+h1.glass {
+  font-size: 50px;
+  color: #efeeee;
+}
+
 .box {
-  width: 320px;
-  border: 1px solid #393f47;
+  width: 350px;
+  border: 1.5px solid #9a9a9a;
   border-radius: 5px;
-  height: 100px;
-  margin: 20px 20px 20px 0;
+  height: 120px;
+  margin: 15px 15px 15px 15px;
   padding: 10px 10px 10px 10px;
+  box-shadow: 10px 5px 5px rgb(142, 140, 140);
 }
 
 h3 {
@@ -94,17 +93,34 @@ i {
   padding: 0 0 0 0;
 }
 
-@media (max-width: 767px) {
-  .repositories {
+@media (max-width: 1000px) {
+  .box {
+    width: 350px;
+    border: 1.5px solid #9a9a9a;
+    border-radius: 5px;
+    height: 120px;
+    margin: 0 0 40px 0;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 10px 5px 5px rgb(142, 140, 140);
+  }
+
+  .repo-box {
     display: flex;
-    justify-content: space-between;
-    max-height: 70px;
-    max-width: 700px;
-    margin-left: 450px;
-    margin-top: -300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
   }
 
   .repositories a {
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  h1.glass {
+    font-size: 30px;
+    color: #efeeee;
   }
 }
