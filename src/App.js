@@ -1,13 +1,13 @@
-import React from "react";
-import "./App.scss";
-import Particles from "react-tsparticles";
-import { Landing } from "./Pages";
-import { loadStarsPreset } from "tsparticles-preset-stars";
-import ErrorBoundary from "./ErrorBoundary/ErrorBoundary";
+import React from 'react'
+import './App.scss'
+import Particles from 'react-tsparticles'
+import { loadStarsPreset } from 'tsparticles-preset-stars'
+import ErrorBoundary from './ErrorBoundary/ErrorBoundary'
+import { Routing } from './Components'
 
 const App = () => {
   const options = {
-    preset: "stars",
+    preset: 'stars',
     particles: {
       size: {
         value: 1, // change the value property to reduce the size of the stars
@@ -18,7 +18,7 @@ const App = () => {
       },
       number: {
         value: 300, // increase the value to add more stars
-      }, 
+      },
     },
 
     Animation: {
@@ -30,29 +30,28 @@ const App = () => {
 
     background: {
       color: {
-        value: "#231e43",
+        value: '#231e43',
       },
     },
-  };
+  }
 
   const initialize = (instance) => {
-    loadStarsPreset(instance);
-  };
+    loadStarsPreset(instance)
+  }
 
   return (
-    <div className="App">
-      <div className="components-containter">
+    <div className='App'>
+      <div className='components-containter'>
         <ErrorBoundary>
-          {/* <Routing /> */}
-          <Landing />
+          <Routing />
         </ErrorBoundary>
       </div>
 
-      <div className="particles-container">
-        <Particles id="tsparticles" options={options} init={initialize} />
+      <div className='particles-container'>
+        <Particles id='tsparticles' options={options} init={initialize} />
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default App;
+export default App

@@ -1,0 +1,143 @@
+body {
+  background: #c6cdd7;
+}
+
+.repo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.explore {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  flex-direction: column;
+}
+
+.search {
+  width: 800px;
+  height: 45px;
+  border-radius: 25px;
+  padding-left: 25px;
+  border: none;
+}
+
+.search-btn {
+  width: 100px;
+  height: 45px;
+  margin-left: 20px;
+  background-color: #9a9a9a;
+  border-radius: 25px;
+}
+
+h1.glass {
+  font-size: 50px;
+  color: #efeeee;
+}
+
+.box {
+  width: 350px;
+  border: 1.5px solid #9a9a9a;
+  border-radius: 5px;
+  height: 120px;
+  margin: 15px 15px 15px 15px;
+  padding: 10px 10px 10px 10px;
+  box-shadow: 10px 5px 5px rgb(142, 140, 140);
+}
+
+h3 {
+  color: #f0f6fc;
+  font-size: 25px;
+  font-weight: 100;
+}
+
+.name {
+  margin-left: 100px;
+}
+
+.starCount {
+  margin-left: 10px;
+}
+
+.loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 350px;
+}
+
+.cal {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cal a {
+  text-decoration: none;
+  color: #58a6ff;
+}
+
+.cal a:hover {
+  border-bottom: 2px solid #58a6ff;
+}
+
+small {
+  border: 0.5px solid #f0f6fc;
+  border-radius: 10px;
+  color: #f0f6fc;
+  padding: 1px 7px 2px 7px;
+}
+
+.jav {
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+}
+
+i {
+  color: #3a8de0;
+  margin-top: 15px;
+  margin-left: 15px;
+}
+
+.box p {
+  font-size: 14px;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 1000px) {
+  .box {
+    width: 350px;
+    border: 1.5px solid #9a9a9a;
+    border-radius: 5px;
+    height: 120px;
+    margin: 0 0 40px 0;
+    padding: 10px 10px 10px 10px;
+    box-shadow: 10px 5px 5px rgb(142, 140, 140);
+  }
+
+  .repo-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .repositories a {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 730px) {
+  h1.glass {
+    font-size: 30px;
+    color: #efeeee;
+  }
+}

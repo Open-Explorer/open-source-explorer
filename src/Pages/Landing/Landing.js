@@ -1,14 +1,14 @@
-import "./Landing.scss";
-import { Navbar, Hero, Footer } from "../../Components";
+import './Landing.scss'
+import { Navbar, Hero, Footer } from '../../Components'
 
 const Landing = () => {
-    return (
-        <div className="landing">
-            <Navbar />
-            <Hero />
-            <Footer />
-        </div>
-    );
-};
+  return (
+    <div className='landing'>
+      <Navbar />
+      <Hero />
+      <Footer />
+    </div>
+  )
+}
 
-export default Landing;
+export default Landing
