@@ -16,6 +16,23 @@ body {
   align-items: center;
   justify-content: center;
   margin: 50px;
+  flex-direction: column;
+}
+
+.search {
+  width: 800px;
+  height: 45px;
+  border-radius: 25px;
+  padding-left: 25px;
+  border: none;
+}
+
+.search-btn {
+  width: 100px;
+  height: 45px;
+  margin-left: 20px;
+  background-color: #9a9a9a;
+  border-radius: 25px;
 }
 
 h1.glass {
